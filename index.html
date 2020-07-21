@@ -3,6 +3,46 @@
 <head>
 	<title></title>
 <!-- 	<style type="text/css">
+		li{
+			list-style: none;
+			display: inline-block;
+			margin: 10px;
+		}
+	</style> -->
+<!-- 	<style type="text/css">
+		table{text-align:center};
+	</style> -->
+<!-- 	<style type="text/css">
+		.modal{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	</style> -->
+
+<!-- 	<style type="text/css">
+		.container {
+			display: flex;
+			align-items: stretch;
+			flex-direction: row;
+		}
+		.container div {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		.box1{
+			flex:2;
+		}
+		.box2{
+			flex:1;
+		}
+		.box3{
+			flex:2;
+		}
+	</style> -->
+	
+	<!-- 	<style type="text/css">
 		*{
 			margin:0;
 		}
@@ -23,8 +63,178 @@
 			box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.8);
 		}
 	</style> -->
+
+
+
 </head>
 <body>
+	<div class="container">
+		<div class="box1">
+			<h1>box1</h1>
+			<p>This is box1 in divs 1</p>
+		</div>	
+		<div class="box2">
+			<h1>box2</h1>
+			<p>This is box2 in div 2</p>
+		</div>	
+		<div class="box3">
+			<h1>box3</h1>
+			<p>This is box3 in div 3</p>
+		</div>	
+	</div>
+	<!-- CHAPTER 43 - 48 -->
+<!-- Task 1 Start -->
+<!-- <a href="#" onClick="showAlert()">Show Alert</a> -->
+
+<!-- Task 2 Start -->
+<!-- 	<ul>
+		<li>
+			<a href="#" onClick="showAlert()">
+				<img src="img/1.jpg" width="300">
+			</a>
+		</li>
+		<li>
+			<a href="#" onClick="showAlert()">
+				<img src="img/2.jpg" width="300">
+			</a>
+		</li>
+		<li>
+			<a href="#" onClick="showAlert()">
+				<img src="img/3.jpg" width="300">
+			</a>
+		</li>
+		<li>
+			<a href="#" onClick="showAlert()">
+				<img src="img/4.jpg" width="300">
+			</a>
+		</li>
+	</ul> -->
+
+<!-- Task 3 Start -->
+<!-- <table width="500" id="students_table" align="center">
+	<tr>
+		<th>Name</th>
+		<th>Roll#</th>
+		<th>Class</th>
+		<th>Options</th>
+	</tr>	
+</table> -->
+
+
+<!-- Task 4 Start -->
+<!-- 	<img id="picChange" src="img/1.jpg"> -->
+
+<!-- Task 5 Start -->
+<!-- 	<p id="counter">0</p>
+	<button onclick="increase()">Increase</button>
+	<button onclick="decrease()">Decrease</button> -->
+
+
+
+	<!-- CHAPTER 49 - 52 -->
+<!-- Task 1 Start -->
+
+<!-- <form method="get" action="?" id="signup" onsubmit="return false">
+	<table>
+		<tr>
+			<td>name:</td>
+			<td><input type="text" name="name" id="input_name" /></td>
+		</tr>
+		<tr>
+			<td>email:</td>
+			<td><input type="email" name="email" id="input_email" /></td>
+		</tr>
+		<tr>
+			<td>username:</td>
+			<td><input type="text" name="username" id="input_username" /></td>
+		</tr>
+		<tr>
+			<td>password:</td>
+			<td><input type="password" name="password" id="input_password" /></td>
+		</tr>
+		<tr>
+			<td>Submit:</td>
+			<td><input type="submit" name="submit" id="submit" /></td>
+		</tr>
+	</table>
+</form>
+
+<br>
+
+	<table>
+		<tr>
+			<td>name:</td>
+			<td><span id="name"></span></td>
+		</tr>
+		<tr>
+			<td>email:</td>
+			<td><span id="email"></span></td>
+		</tr>
+		<tr>
+			<td>username:</td>
+			<td><span id="username"></span></td>
+		</tr>
+		<tr>
+			<td>password:</td>
+			<td><span id="password"></span></td>
+		</tr>
+	</table>
+ -->
+
+<!-- Task 2 Start -->
+
+<!-- <div id="content">
+	<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. <span id="more">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</span><a href="#" onClick="morefunc()" id="visibility">Read More...</a></p>
+</div> -->
+
+<!-- Task 3 Start -->
+
+<!-- <table width="500" id="students_table" align="center">
+	<tr>
+		<th>Serial</th>
+		<th>Roll#</th>
+		<th>Name</th>
+		<th>Class</th>
+		<th>Options</th>
+	</tr>	
+</table>
+
+<form method="get" action="?" id="signup" onsubmit="return false">
+	<table>
+		<tr>
+			<td>Roll#:</td>
+			<td><input type="text" name="roll" id="input_roll" required /></td>
+		</tr>
+		<tr>
+			<td>name:</td>
+			<td><input type="text" name="name" id="input_name" required /></td>
+		</tr>
+		<tr>
+			<td>Standard:</td>
+			<td><input type="text" name="Standard" id="input_standard" required /></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" name="submit" id="submit" value="Add" />
+				<input type="submit" name="update" id="update" value="Update" />
+			</td>
+		</tr>
+	</table>
+</form>
+ -->
+
+	<!-- CHAPTER 53 - 58 -->
+	<!-- Task 1 Start -->
+
+<!-- <img src="img/1.jpg" id="image1">
+
+<div id="modal" class="modal">
+	<img src="img/2.jpg" class="modal-content">
+</div> -->
+
+
 <!-- 	<img src="img/thumb.jpg" id="thumb">
 	<div class="container" id="modal">
 		<img src="img/image.jpg">
@@ -32,33 +242,91 @@
 <script type="text/javascript">
 	let thumb = document.getElementById('thumb');
 	let modal = document.getElementById('modal');
-
-
 	thumb.addEventListener('click', openModal);
 	function openModal(){
 		modal.style.display = 'flex';
 	}
-
 	window.onclick = function(event){
 		if(event.target == modal)
 		 modal.style.display = 'none';
 	}
 </script> -->
 
-<div id="container">
+<!-- <div id="container">
 	<p>
 		Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-
 		<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 </div>
 <div id="buttons">
 	<button id="zoomin">Zoom In</button>
 	<button id="zoomout">Zoom Out</button>
 </div>
-
 <script type="text/javascript">
+	let initFontSize = 16;
 	let para = document.getElementById('container');
-	para.style.
-</script>
+	let zoomin = document.getElementById('zoomin');
+	zoomin.addEventListener('click', increaseFontSize);
+	function increaseFontSize(){
+		initFontSize++;
+		para.style.fontSize = initFontSize+"px";
+	}
+	let zoomout = document.getElementById('zoomout');
+	zoomout.addEventListener('click', decreaseFontSize);
+	function decreaseFontSize(){
+		initFontSize--;
+		para.style.fontSize = initFontSize+"px";
+	}
+</script> -->
+
+<!-- <div> 
+	<h1> DOM </h1> 
+	<div id="form-content" class="content"> 
+		<label for="first-name">First Name</label> 
+		<input type="text" id="first-name" /> 
+		<label for="last-name">Last Name</label> 
+		<input type="text" id="last-name" /> 
+		<label for="email">Email</label> 
+		<input type="text" id="email" /> 
+	</div> 
+	<div id="main-content" class="content"> 
+		<p class="render"> First Name : Alex</p> 
+		<p class="render" id="lastName">Last Name: Bank</p> 
+		<p class="render"> Email : alexbank@example.com</p> 
+		<p class="render"> Country : Pakistan </p> 
+		<p class="render"> contact : +92 300 1234567</p>
+	</div> 
+</div>
+<br>
+<p>-----------------------Results--------------------</p>
+<span id="result"></span>
+<script type="text/javascript">
+	let result = document.getElementById('result');
+	let mainContent = document.getElementById('main-content');
+	// console.log(mainContent.childNodes);
+	let render = document.getElementsByClassName('render');
+	// console.log(render);
+	for(let i = 0; i<render.length; i++){
+		result.innerHTML += render[i].innerHTML + '<br />';
+	}
+	document.getElementById('first-name').value = "Usama";
+	document.getElementById('last-name').value = "Zahid";
+	let email = document.getElementById('email');
+	email.value = "Usamazahid@hotmail.com";
+	let formContent = document.getElementById('form-content');
+	// console.log(formContent.nodeType)
+	// console.log(formContent.nodeName)
+	let lastName = document.getElementById('lastName');
+	// console.log(lastName.nodeName)
+	// console.log(lastName.childNodes[0].nodeName)
+	lastName.childNodes[0].nodeValue = "Last Name: Hussain";
+	// console.log(mainContent.firstChild)
+	// console.log(mainContent.lastChild)
+	// console.log(lastName.previousElementSibling)
+	// console.log(lastName.nextElementSibling)
+	console.log(email.parentNode)
+	console.log(email.nodeName)
+</script> -->
+	
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
