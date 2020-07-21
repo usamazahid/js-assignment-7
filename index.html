@@ -45,7 +45,7 @@
 	}
 </script> -->
 
-<div id="container">
+<!-- <div id="container">
 	<p>
 		Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 
@@ -57,8 +57,77 @@
 </div>
 
 <script type="text/javascript">
+	let initFontSize = 16;
 	let para = document.getElementById('container');
-	para.style.
-</script>
+	let zoomin = document.getElementById('zoomin');
+	zoomin.addEventListener('click', increaseFontSize);
+	function increaseFontSize(){
+		initFontSize++;
+		para.style.fontSize = initFontSize+"px";
+	}
+	let zoomout = document.getElementById('zoomout');
+	zoomout.addEventListener('click', decreaseFontSize);
+	function decreaseFontSize(){
+		initFontSize--;
+		para.style.fontSize = initFontSize+"px";
+	}
+</script> -->
+
+<!-- <div> 
+	<h1> DOM </h1> 
+	<div id="form-content" class="content"> 
+		<label for="first-name">First Name</label> 
+		<input type="text" id="first-name" /> 
+		<label for="last-name">Last Name</label> 
+		<input type="text" id="last-name" /> 
+		<label for="email">Email</label> 
+		<input type="text" id="email" /> 
+	</div> 
+	<div id="main-content" class="content"> 
+		<p class="render"> First Name : Alex</p> 
+		<p class="render" id="lastName">Last Name: Bank</p> 
+		<p class="render"> Email : alexbank@example.com</p> 
+		<p class="render"> Country : Pakistan </p> 
+		<p class="render"> contact : +92 300 1234567</p>
+	</div> 
+</div>
+<br>
+<p>-----------------------Results--------------------</p>
+<span id="result"></span>
+
+<script type="text/javascript">
+	let result = document.getElementById('result');
+
+	let mainContent = document.getElementById('main-content');
+	// console.log(mainContent.childNodes);
+	let render = document.getElementsByClassName('render');
+	// console.log(render);
+	for(let i = 0; i<render.length; i++){
+		result.innerHTML += render[i].innerHTML + '<br />';
+	}
+	document.getElementById('first-name').value = "Usama";
+	document.getElementById('last-name').value = "Zahid";
+	let email = document.getElementById('email');
+	email.value = "Usamazahid@hotmail.com";
+
+	let formContent = document.getElementById('form-content');
+	// console.log(formContent.nodeType)
+	// console.log(formContent.nodeName)
+
+	let lastName = document.getElementById('lastName');
+	// console.log(lastName.nodeName)
+	// console.log(lastName.childNodes[0].nodeName)
+	lastName.childNodes[0].nodeValue = "Last Name: Hussain";
+
+	// console.log(mainContent.firstChild)
+	// console.log(mainContent.lastChild)
+
+	// console.log(lastName.previousElementSibling)
+	// console.log(lastName.nextElementSibling)
+
+	console.log(email.parentNode)
+	console.log(email.nodeName)
+
+</script> -->
 </body>
 </html>
